@@ -90,11 +90,6 @@
 .div-block {
 	width: 50%;
 	background-color: #333;
-	background-image: url("../images/Pecat.png");
-	background-position: 80% 62px;
-	background-size: 230px;
-	background-repeat: no-repeat;
-	background-attachment: scroll;
 	font-family: Montserrat, sans-serif;
 	color: #fff;
 }
