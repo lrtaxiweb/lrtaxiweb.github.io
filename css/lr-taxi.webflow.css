@@ -278,6 +278,24 @@
 	text-decoration: none;
 }
 
+.link-kontakt:hover,
+.link-kontakt:focus {
+	color: #111;
+	text-decoration: underline;
+}
+
+#kontakt {
+	scroll-margin-top: 85px;
+}
+
+.cennik {
+	padding-top: 70px;
+	padding-bottom: 70px;
+	background-color: #333;
+	color: #fff;
+	scroll-margin-top: 85px;
+}
+
 .wrapper4 {
 	display: block;
 	width: 1250px;
@@ -336,14 +354,28 @@
 	justify-content: space-between;
 }
 
+.cennik-image-wrap {
+	margin: 55px 0px 0px;
+}
+
+.cennik-image {
+	display: block;
+	width: 100%;
+	max-width: 560px;
+	margin-right: auto;
+	margin-left: auto;
+	border: 4px solid #f7c51b;
+	border-radius: 6px;
+}
+
 .vozidla {
-	padding-top: 55px;
+	padding-top: 70px;
 	padding-bottom: 70px;
-	background-color: #333;
+	background-color: #f7c51b;
 	background-position: 90% 50%;
 	background-size: 440px;
 	background-repeat: no-repeat;
-	color: #fff;
+	color: #333;
 }
 
 .vozwrap {
@@ -377,8 +409,8 @@
 }
 
 .footer {
-	background-color: #f7c51b;
-	color: #333;
+	background-color: #333;
+	color: #fff;
 	font-weight: 700;
 }
 
@@ -400,10 +432,16 @@
 
 .link-footer {
 	margin-left: 60px;
-	color: #333;
+	color: #fff;
 	font-size: 20px;
 	font-weight: 700;
 	text-decoration: none;
+}
+
+.link-footer:hover,
+.link-footer:focus {
+	color: #f7c51b;
+	text-decoration: underline;
 }
 
 .link-footer.first {
@@ -567,7 +605,8 @@
 		line-height: 35px;
 	}
 	.cennik {
-		background-image: none;
+		padding-top: 60px;
+		padding-bottom: 60px;
 	}
 	.wrapper4 {
 		width: 760px;
@@ -708,8 +747,8 @@
 		line-height: 23px;
 	}
 	.vozidla {
-		padding-top: 50px;
-		padding-bottom: 50px;
+		padding-top: 60px;
+		padding-bottom: 60px;
 	}
 	.vozwrap {
 		width: 470px;
@@ -887,7 +926,8 @@
 		font-weight: 400;
 	}
 	.cennik {
-		background-image: none;
+		padding-top: 50px;
+		padding-bottom: 50px;
 	}
 	.wrapper4 {
 		width: 318px;

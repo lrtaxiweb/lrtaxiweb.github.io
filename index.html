@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 	<head>
 		<meta charset="utf-8" />
@@ -32,7 +32,7 @@
 			!(function (o, c) {
 				var n = c.documentElement,
 					t = " w-mod-";
-				(n.className += t + "js"), ("ontouchstart" in o || (o.DocumentTouch && c instanceof DocumentTouch)) && (n.className += t + "touch");
+				((n.className += t + "js"), ("ontouchstart" in o || (o.DocumentTouch && c instanceof DocumentTouch)) && (n.className += t + "touch"));
 			})(window, document);
 		</script>
 		<link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png" />
@@ -57,13 +57,15 @@
 		<link rel="preload" as="image" href="../images/Black-white2x.png" />
 		<link rel="preload" as="image" href="../images/Black-white2x.png" />
 	</head>
+
 	<body class="body">
 		<div data-collapse="medium" data-animation="default" data-duration="400" class="navbar w-nav">
 			<div class="nav-wrapper">
 				<a href="#" class="w-nav-brand"><img src="images/lrtaxi_logo.svg" width="200" alt="Logo" class="image-6" /></a>
 				<nav role="navigation" class="nav-menu w-nav-menu">
-					<a href="#cennik" class="nav-link-2 w-nav-link">Cenník</a><a href="#kontakt" class="nav-link-3 w-nav-link">Kontakt</a
-					><a href="#vozidla" class="nav-link-3 w-nav-link">Vozidlá</a>
+					<a href="#kontakt" class="nav-link-2 w-nav-link">Kontakt</a>
+					<a href="#cennik" class="nav-link-3 w-nav-link">Cenník</a>
+					<a href="#vozidla" class="nav-link-3 w-nav-link">Vozidlá</a>
 				</nav>
 				<div class="menu-button w-nav-button">
 					<div class="w-icon-nav-menu"></div>
@@ -98,7 +100,7 @@
 		<div class="prechod-section">
 			<div class="prechod"></div>
 		</div>
-		<section class="vodici-kontakt">
+		<section id="kontakt" class="vodici-kontakt">
 			<div class="text nav-wrapper">
 				<p>
 					Ponúkame Vám služby v individuálnej preprave osôb, nákupov a zásielok. Našou snahou je poskytovanie kvalitných služieb za priaznivú cenu pre čo
@@ -116,18 +118,26 @@
 						allowfullscreen
 					></iframe>
 				</div>
-				<aside id="kontakt" class="inner-wrap-left right">
+				<aside id="kontakt-info" class="inner-wrap-left right">
 					<a href="tel:0904137147" class="link-kontakt">Tel.č.: 0904 137 147</a><a href="tel:0903234500" class="link-kontakt">Tel.č.: 0903 234 500</a>
 					<a href="mailto:taxilr11@gmail.com" class="link-kontakt">E-mail: taxilr11@gmail.com</a>
 					<div class="adresa">
 						<div class="text-adresa link-kontakt bold">Jozef Biberle st. - EXPO PÚCHOV,</div>
 						<div class="text-adresa link-kontakt">Lednické Rovne - Horenická Hôrka</div>
 						<div class="text-adresa link-kontakt">Cintorínska 183, &nbsp;020 61</div>
-						<!-- <div class="text-adresa link-kontakt">020 61</div> -->
 						<div class="text-adresa link-kontakt">IČO: 36888001, DIČ: 1039640756</div>
 					</div>
 				</aside>
 			</section>
+		</section>
+		<section id="cennik" class="cennik">
+			<div class="vozwrap">
+				<h2 class="heading-3">Cenník</h2>
+				<div class="text-block-4">Platný cenník taxislužby LR TAXI.</div>
+				<figure class="cennik-image-wrap">
+					<img src="images/cennik.jpg" loading="lazy" alt="Cenník LR TAXI so sadzbami pre tarifu 1, 2 a 3." class="cennik-image" />
+				</figure>
+			</div>
 		</section>
 		<section class="vozidla">
 			<div id="vozidla" class="vozwrap">
